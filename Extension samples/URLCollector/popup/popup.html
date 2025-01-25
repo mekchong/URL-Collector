@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>URL Collector</title>
+  </head>
+  <body>
+    <div id="info"></div>
+    <h1>URL Collector</h1>
+    <div id="outerOptionsContainer">
+      <div id="options">
+        <label for="radioGroup">Output format:</label><br />
+        <input type="radio" id="stringRadio" name="radioGroup" value="string" />
+        <label for="stringRadio">String</label><br />
+        <input
+          type="radio"
+          id="jsonRadio"
+          name="radioGroup"
+          value="json"
+          checked
+        />
+        <label for="jsonRadio">JSON</label><br />
+      </div>
+      <div id="saveButtonContainer">
+        <button class="button-5" id="saveButton">Save</button>
+        <button class="button-5" id="executeButton">Execute</button>
+      </div>
+    </div>
+    <div id="inputFieldContainer">
+      <textarea placeholder="temp" id="inputField"></textarea>
+    </div>
+  </body>
+</html>

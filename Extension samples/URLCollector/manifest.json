@@ -1,0 +1,24 @@
+{
+  "name": "URL Collector",
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+  "description": "Trying to collect URLs of all open tabs.",
+  "icons": {
+      "16": "icons/link.png",
+      "32": "icons/link.png",
+      "48": "icons/link.png",
+      "128": "icons/link.png"
+  },
+  "action": {
+      "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["/popup/script.js"],
+    "css": ["/popup/styles.css"]
+  }],
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ]
+}
