@@ -7,8 +7,30 @@ document.addEventListener("DOMContentLoaded", function () {
     let radioValue = document.querySelector(
       'input[name="radioGroup"]:checked'
     ).value;
+    
+    const executeButton = document.getElementById("executeButton");
+    if (radioValue === "string") {
+      // disable execute button
+      executeButton.disabled = true;
+      executeButton.style.backgroundColor = "#b1b1b1";
+      executeButton.style.cursor = "not-allowed";
+    }
+
+    if (radioValue === "json") {
+      // enable execute button
+      executeButton.disabled = false;
+      executeButton.style.backgroundColor = "#fa6400";
+      executeButton.style.cursor = "pointer";
+    }
+
     updateTextArea(radioValue);
   };
+
+  // trigger save logic
+  document.getElementById("saveButton").onclick = saveToFile;
+
+  // trigger execute logic
+  document.getElementById("executeButton").onclick = executeTabs;
 
   // Function to update the textarea based on radio value
   function updateTextArea(outputFormat) {
@@ -64,12 +86,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  document.getElementById("saveButton").onclick = saveToFile;
-
-  document.getElementById("executeButton").onclick = executeTabs;
-
+  // Outputs current inputField content to a file
   function saveToFile() {
-    console.log("save to file");
     // set output format based on radio button selection
     let outputFormat = document.querySelector(
       'input[name="radioGroup"]:checked'
@@ -101,6 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
     link.click();
   }
 
+  // Opens tabs from the inputField content
   function executeTabs() {
     console.log("execute tabs");
 
