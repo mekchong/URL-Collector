@@ -23,7 +23,7 @@ This Edge (for now) extension will collect names and URLs of all tabs currently 
 5. Navigate to the download location of the extension and select the folder containing `manifest.json`.
 
 # TODO
-1. Figure out why the extension is squishing some pages (github, stackoverflow).
+1. ~~Figure out why the extension is squishing some pages (github, stackoverflow).~~
 2. Figure out option for including/excluding incognito tabs.
-3.  Figure out reading/writing tab groups and incognito tabs.
-4.  Active incognito tab doesn't get added.
+3. Figure out reading/writing tab groups and incognito tabs.
+4. ~~Active incognito tab doesn't get added.~~
