@@ -1,8 +1,8 @@
 {
-  "name": "URL Collector",
+  "name": "URLer",
   "version": "0.0.0.1",
   "manifest_version": 3,
-  "description": "Trying to collect URLs of all open tabs.",
+  "description": "Collects all open tabs and active tab and saves them to a file. Can also mass-open tabs from the file.",
   "icons": {
       "16": "icons/link.png",
       "32": "icons/link.png",
