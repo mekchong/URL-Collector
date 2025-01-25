@@ -26,3 +26,4 @@ This Edge (for now) extension will collect names and URLs of all tabs currently 
 1. Figure out why the extension is squishing some pages (github, stackoverflow).
 2. Figure out option for including/excluding incognito tabs.
 3.  Figure out reading/writing tab groups and incognito tabs.
+4.  Active incognito tab doesn't get added.
