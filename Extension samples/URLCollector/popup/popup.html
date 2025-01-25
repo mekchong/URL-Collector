@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>NASA Picture of the Day</title>
+  </head>
+  <body>
+    <h1>URL Collector</h1>
+    <div id="options">
+      <label for="radioGroup">Output format:</label><br />
+      <input type="radio" id="stringRadio" name="radioGroup" value="string" />
+      <label for="stringRadio">String</label><br />
+      <input
+        type="radio"
+        id="jsonRadio"
+        name="radioGroup"
+        value="json"
+        checked
+      />
+      <label for="jsonRadio">JSON</label><br />
+    </div>
+    <div id="saveButtonContainer">
+      <button id="saveButton">Save</button>
+    </div>
+    <div id="inputFieldContainer">
+      <textarea placeholder="temp" id="inputField"></textarea>
+    </div>
+  </body>
+</html>
