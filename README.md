@@ -14,3 +14,10 @@ This Edge (for now) extension will collect names and URLs of all tabs currently 
   ]
 }
 ```
+
+## Sideloading URLer into Edge (unpacked)
+1. Download URLer locally on your machine.
+2. Navigate to the Extensions page in Edge.
+3. Enable Developer mode.
+4. Click on `Load Unpacked`.
+5. Navigate to the download location of the extension and select the folder containing `manifest.json`.
